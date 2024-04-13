@@ -14,8 +14,6 @@
     <Compile Remove="DTOs\**" />
     <Compile Remove="Factories\**" />
     <Compile Remove="Orchestrations\**" />
-    <Compile Remove="Queries\**" />
-    <Compile Remove="Services\**" />
     <EmbeddedResource Remove="Adicionales\**" />
     <EmbeddedResource Remove="Commands\**" />
     <EmbeddedResource Remove="Common\Enums\**" />
@@ -23,8 +21,6 @@
     <EmbeddedResource Remove="DTOs\**" />
     <EmbeddedResource Remove="Factories\**" />
     <EmbeddedResource Remove="Orchestrations\**" />
-    <EmbeddedResource Remove="Queries\**" />
-    <EmbeddedResource Remove="Services\**" />
     <None Remove="Adicionales\**" />
     <None Remove="Commands\**" />
     <None Remove="Common\Enums\**" />
@@ -32,19 +28,16 @@
     <None Remove="DTOs\**" />
     <None Remove="Factories\**" />
     <None Remove="Orchestrations\**" />
-    <None Remove="Queries\**" />
-    <None Remove="Services\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="AutoMapper" Version="11.0.1" />
-    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
-    <PackageReference Include="FluentValidation" Version="10.4.0" />
-    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="10.0.1" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.4" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="6.0.4" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.4" />
-    <PackageReference Include="morelinq" Version="3.3.2" />
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="FluentValidation" Version="11.9.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="8.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.4" />
+    <PackageReference Include="morelinq" Version="4.2.0" />
   </ItemGroup>
 
   <ItemGroup>
