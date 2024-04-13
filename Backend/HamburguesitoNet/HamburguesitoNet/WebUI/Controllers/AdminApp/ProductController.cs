@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace WebUI.Controllers
+namespace WebUI.Controllers.AdminApp
 {
-    public class MenuController : Controller
+    public class ProductController : Controller
     {
         public IActionResult Index()
         {
