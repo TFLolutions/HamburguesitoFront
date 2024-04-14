@@ -2,11 +2,8 @@
 using Domain.Models.Common;
 using HamburguesitoNet.Application.Common.Interfaces;
 using HamburguesitoNet.Application.Common.Interfaces.Services;
-using Infrastructure.Persistence.Seeders;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.VisualBasic;
 using System.Reflection;
-using System.Reflection.Emit;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -59,7 +56,6 @@ namespace HamburguesitoNet.Infrastructure.Persistence
         {
             builder.Entity<Product>().Property(p => p.Price).HasColumnType("decimal(18, 2)");
             builder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
-            ProductSeeder.Seed(builder);
 
             base.OnModelCreating(builder);
         }

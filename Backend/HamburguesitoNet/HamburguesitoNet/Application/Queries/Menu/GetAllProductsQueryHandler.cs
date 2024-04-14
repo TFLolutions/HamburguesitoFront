@@ -1,4 +1,5 @@
-﻿using Application.Services.Interfaces;
+﻿using Application.Common.Exceptions;
+using Application.Services.Interfaces;
 using AutoMapper;
 using Domain.Models;
 using MediatR;
@@ -23,6 +24,7 @@ namespace Application.Queries.Menu
         public async Task<IList<Product>> Handle(GetAllProductsQuery request, CancellationToken cancellationToken)
         {
             var product = await _productService.GetAll();
+            if (product == null) { throw new GetProductsException(); }
             return new List<Product>(product);
         }
     }
