@@ -11,9 +11,9 @@ namespace WebUI.Controllers.AdminApp
 {
     [Route("api/AdminApp")]
     [ApiController]
-    public class MenuController : ApiController
+    public class ProductController : ApiController
     {
-        public MenuController()
+        public ProductController()
         {
 
         }

@@ -14,6 +14,5 @@ namespace Domain.Models
         public string Description { get; set; }
         public decimal Price { get; set; }
         public bool Active { get; set; }
-        public IList<string> Ingredients { get; set; }
     }
 }

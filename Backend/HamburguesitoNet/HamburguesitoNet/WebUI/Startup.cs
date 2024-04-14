@@ -1,3 +1,4 @@
+using FluentValidation;
 using FluentValidation.AspNetCore;
 using HamburguesitoNet.Application;
 using HamburguesitoNet.Application.Common.Interfaces;
@@ -55,11 +56,13 @@ namespace HamburguesitoNet.WebUI
             services.AddHealthChecks()
                 .AddDbContextCheck<ApplicationDbContext>();
 
-            services.AddControllersWithViews()
-                .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<IApplicationDbContext>())
-                .AddNewtonsoftJson(x => x.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
+            services.AddControllersWithViews();
+            services.AddFluentValidationAutoValidation() 
+            .AddFluentValidationClientsideAdapters()
+            .AddValidatorsFromAssemblyContaining<IApplicationDbContext>();
 
             services.AddRazorPages();
+
 
             // Customise default API behaviour
             services.Configure<ApiBehaviorOptions>(options =>

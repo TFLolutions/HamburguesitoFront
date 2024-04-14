@@ -1,4 +1,5 @@
-﻿using Application.Services;
+﻿using Application.Command.ProductCommand.CreateProduct;
+using Application.Services;
 using Domain.Models;
 using MediatR;
 using System;
