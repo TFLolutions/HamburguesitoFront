@@ -27,7 +27,6 @@ namespace Application.Command.ProductCommand.AdminActionsProduct.AdminActionCrea
                 Description = request.Description,
                 Price = request.Price,
                 Active = true,
-                Ingredients = request.Ingredients,
             };
             return await _productService.Add(producto, cancellationToken);
         }
