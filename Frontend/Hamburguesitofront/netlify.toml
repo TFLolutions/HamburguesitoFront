@@ -1,3 +1,4 @@
 [build]
+  base = "Frontend/HamburguesitoFront"
+  publish = "Frontend/HamburguesitoFront/dist"
   command = "npm run build"
-  publish = "dist" # la carpeta que contiene tu sitio construido
