@@ -1,4 +1,0 @@
-[build]
-  base = "Frontend/HamburguesitoFront"
-  publish = "Frontend/HamburguesitoFront/dist"
-  command = "npm run build"
