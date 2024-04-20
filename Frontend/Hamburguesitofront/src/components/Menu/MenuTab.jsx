@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 const imageUrl = "https://source.unsplash.com/random/?glazed-salmon";
+const imageFernetUrl = "https://source.unsplash.com/random/?fernet"
 // Datos de ejemplo, reemplázalos con tus datos reales.
 const menuItemsData = [
   {
@@ -10,21 +11,37 @@ const menuItemsData = [
     price: '€22,00',
     imageUrl: imageUrl, // Reemplaza con la URL de tu imagen
   },
+  {
+    id: 2,
+    category: 'Entradas',
+    name: 'Salmón glaseado',
+    description: 'Miso de sal dulce con mantequilla',
+    price: '€24,00',
+    imageUrl: imageUrl, // Reemplaza con la URL de tu imagen
+  },
+  {
+    id: 1,
+    category: 'Bebidas',
+    name: 'Fernet branca ',
+    description: 'Fernet branca argentino',
+    price: '€10,00',
+    imageUrl: imageFernetUrl, // Reemplaza con la URL de tu imagen
+  },
   // ...otros elementos del menú...
 ];
 
 const MenuTab = () => {
   const [activeTab, setActiveTab] = useState('Entradas');
-  const tabs = ['Entradas', 'Bebidas', 'Desserts', 'Cocktails'];
+  const tabs = ['Entradas', 'Bebidas', 'Desserts', 'Cocktails','Postres','Comidas'];
 
   return (
     <div className="max-w-md mx-auto pt-2">
       {/* Tabs del menú */}
-      <div className="flex justify-around bg-white p-2 rounded-lg shadow-md mb-4">
+      <div className="flex space-x-2 bg-white p-2 rounded-lg shadow-md overflow-x-auto">
         {tabs.map(tab => (
           <button
             key={tab}
-            className={`text-sm font-semibold ${activeTab === tab ? 'text-red-500 border-b-2 border-red-500' : 'text-gray-500'}`}
+            className={`text-sm font-semibold rounded-full px-4 py-1 ${activeTab === tab ? 'bg-red-500 text-white' : 'text-gray-500 bg-gray-200'}`}
             onClick={() => setActiveTab(tab)}
           >
             {tab}
