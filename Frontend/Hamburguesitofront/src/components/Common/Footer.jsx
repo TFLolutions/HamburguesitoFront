@@ -9,17 +9,14 @@ function Footer() {
                     <div className="w-full md:w-1/4 text-center md:text-left">
                         <h5 className="uppercase mb-6 font-bold">Links</h5>
                         <ul className="mb-4">
+                        <li className="mt-2">
+                                <Link to="/menu" className="hover:underline text-gray-400 hover:text-gray-300">Menú</Link>
+                            </li>
                             <li className="mt-2">
                                 <Link to="/about" className="hover:underline text-gray-400 hover:text-gray-300">Sobre nosotros</Link>
                             </li>
                             <li className="mt-2">
-                                <Link to="/menu" className="hover:underline text-gray-400 hover:text-gray-300">Menú</Link>
-                            </li>
-                            <li className="mt-2">
                                 <Link to="/contact" className="hover:underline text-gray-400 hover:text-gray-300">Contacto</Link>
-                            </li>
-                            <li className="mt-2">
-                                <Link to="/blog" className="hover:underline text-gray-400 hover:text-gray-300">Blog</Link>
                             </li>
                         </ul>
                     </div>
