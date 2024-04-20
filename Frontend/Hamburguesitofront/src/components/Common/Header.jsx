@@ -12,7 +12,7 @@ function Header() {
                 
                 <div className="flex-1 flex items-center justify-center sm:justify-start">
                     <div className="w-full">
-                        <input type="search" className="w-full px-4 py-2 rounded-md" placeholder="Buscar platos o restaurantes" />
+                        <input type="search" className="w-full px-4 py-2 rounded-md" placeholder="Buscar platos o comidas" />
                     </div>
                 </div>
 
@@ -39,9 +39,9 @@ function Header() {
                 </button>
             </div>
             <div className={`md:hidden ${isMenuOpen ? 'block' : 'hidden'}`}>
-                <Link to="#" className="block py-2 px-4 text-sm hover:bg-blue-700">Soluciones</Link>
+                <Link to="#" className="block py-2 px-4 text-sm hover:bg-blue-700">Menu</Link>
                 <Link to="#" className="block py-2 px-4 text-sm hover:bg-blue-700">Precios</Link>
-                <Link to="#" className="block py-2 px-4 text-sm hover:bg-blue-700">Recursos</Link>
+                <Link to="#" className="block py-2 px-4 text-sm hover:bg-blue-700">Opiniones</Link>
             </div>
         </header>
     );
